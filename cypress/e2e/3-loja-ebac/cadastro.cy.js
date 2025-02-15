@@ -18,6 +18,10 @@ describe('Funcionalidade: Cadastro', () => {
         cy.get('.woocommerce-Button').click()
     });
 
+    it.only('Deve completar o cadastro com sucesso - usando comando customizado', () => {
+        cy.preCadastro(faker.internet.email(), 'teste@123', faker.person.firstName(), faker.person.lastName()  )
+    });
+
     it('Deve completar o cadastro com sucesso - Usando variáveis', () => {
 
         var email = faker.internet.email()
@@ -33,6 +37,12 @@ describe('Funcionalidade: Cadastro', () => {
         cy.get('#account_first_name').type(nome)
         cy.get('#account_last_name').type(sobrenome)
         cy.get('.woocommerce-Button').click()
+    });
+
+    it('Deve completar o cadastro com sucesso - usando o comando customizado', () => {
+        cy.preCadastro(faker.internet.email, 'teste@123', faker.person.firstName, faker.person.lastName)
+        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('exist')
+
     });
     
 });

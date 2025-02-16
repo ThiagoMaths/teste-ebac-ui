@@ -1,0 +1,29 @@
+[
+    {
+    "nomeProduto": "Josie Yoga Jacket",
+    "tamanho": "S",
+    "cor": "Blue",
+    "quantidade": 5
+    },
+
+    {
+        "nomeProduto": "Stellar Solar Jacket",
+        "tamanho": "S",
+        "cor": "Red",
+        "quantidade": 3
+        },
+
+        {
+            "nomeProduto": "Augusta Pullover Jacket",
+            "tamanho": "M",
+            "cor": "Yellow",
+            "quantidade": 10
+            },
+
+            {
+                "nomeProduto": "Circe Hooded Ice Fleece",
+                "tamanho": "L",
+                "cor": "Red",
+                "quantidade": 2 
+                }
+]
